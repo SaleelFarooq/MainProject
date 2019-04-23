@@ -1,5 +1,6 @@
 main.container {
     margin-bottom: 100px;
+
 }
 
 nav .navbar-brand > img {
@@ -7,3 +8,56 @@ nav .navbar-brand > img {
     height: 100%;
     margin-right: 10px;
 }
+#signup-form{
+display:none
+}
+#form-switch{
+display:none
+
+}
+#form-switch:checked~#signup-form{
+display:block
+}
+#form-switch:checked~#login-form{
+display:none
+}
+label .form-switch {
+	  	display: inline-block;
+	  	width: 25%;
+	  	text-align: left;
+	  	margin: 10px;
+		cursor: pointer;
+		color:white;
+		
+	}
+label  {
+	  	display: inline-block;
+	  	width: 25%;
+	  	text-align: left;
+	  	margin: 10px;
+		cursor: pointer;
+		
+		
+	}
+.test{
+background-color:none;
+width:100%;
+color:white;
+}
+.cont {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] ,input[type=email],input[type=textarea]{
+ 
+  width: 75%;
+  padding: 12px 20px;
+  margin: 20px 125px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+color:black;
+}
+
+
+

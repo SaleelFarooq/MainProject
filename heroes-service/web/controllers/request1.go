@@ -22,7 +22,8 @@ type Data struct {
 	Price string `json:"price"`
 }
 
-func (app *Application) RequestHandler(w http.ResponseWriter, r *http.Request) {
+
+func (app *Application) RequestHandler1(w http.ResponseWriter, r *http.Request) {
 	data := &struct {
 		TransactionId string
 		Success       bool
@@ -53,5 +54,7 @@ func (app *Application) RequestHandler(w http.ResponseWriter, r *http.Request) {
 		data.Success = true
 		data.Response = true
 	}
-	renderTemplate2(w, r, "request.html", data)
+	renderTemplate1(w, r, "request1.html", data)
 }
+
+
